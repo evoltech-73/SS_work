@@ -621,18 +621,25 @@
         .conclusion-slide {
             align-items: center;
             background:
-                linear-gradient(135deg, rgba(224, 247, 250, 0.95) 0%, rgba(255, 255, 255, 0.96) 50%, rgba(255, 249, 230, 0.95) 100%);
+                radial-gradient(circle at 12% 18%, rgba(255, 209, 102, 0.38) 0 120px, transparent 122px),
+                radial-gradient(circle at 88% 78%, rgba(6, 214, 160, 0.24) 0 150px, transparent 152px),
+                linear-gradient(135deg, #ffffff 0%, #E0F7FA 52%, #FFF9E6 100%);
             justify-content: center;
-            padding: 72px 96px;
+            padding: 70px 92px;
             text-align: center;
         }
 
         .conclusion-layout {
             align-items: center;
+            background: #ffffff;
+            border: 6px solid #2b2d42;
+            border-radius: 34px;
+            box-shadow: 14px 14px 0 #06D6A0;
             display: flex;
             flex-direction: column;
-            gap: 28px;
-            max-width: 920px;
+            gap: 24px;
+            max-width: 980px;
+            padding: 48px 58px;
             position: relative;
             width: 100%;
             z-index: 1;
@@ -650,50 +657,75 @@
             font-weight: 900;
             gap: 10px;
             padding: 8px 18px;
+            position: absolute;
+            top: -26px;
             transform: rotate(-2deg);
         }
 
         .conclusion-layout h2 {
             color: #2b2d42;
-            font-size: 58px;
-            line-height: 1.25;
-            margin: 0;
-            text-shadow: 4px 4px 0 #06D6A0;
+            font-size: 64px;
+            line-height: 1.18;
+            margin: 12px 0 0;
+            text-shadow: 4px 4px 0 #FFD166;
         }
 
         .conclusion-lead {
-            background: #ffffff;
-            border: 4px solid #2b2d42;
-            border-radius: 24px;
-            box-shadow: 8px 8px 0 #118AB2;
             color: #2b2d42;
             font-size: 28px;
             font-weight: 800;
-            line-height: 1.65;
+            line-height: 1.55;
             margin: 0;
-            padding: 28px 36px;
+            max-width: 760px;
+        }
+
+        .conclusion-tags {
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+            margin: 4px 0 2px;
+            width: 100%;
+        }
+
+        .conclusion-tags span {
+            align-items: center;
+            background: #E0F7FA;
+            border: 3px solid #2b2d42;
+            border-radius: 18px;
+            box-shadow: 5px 5px 0 #cbd5e1;
+            color: #2b2d42;
+            display: inline-flex;
+            font-size: 22px;
+            font-weight: 900;
+            gap: 10px;
+            padding: 12px 18px;
+            white-space: nowrap;
+        }
+
+        .conclusion-tags span:nth-child(2) {
+            background: #FFF9E6;
+            box-shadow: 5px 5px 0 #FFD166;
+        }
+
+        .conclusion-tags span:nth-child(3) {
+            background: #F7FFF7;
+            box-shadow: 5px 5px 0 #06D6A0;
         }
 
         .conclusion-callout {
-            background: #FFF9E6;
-            border: 5px solid #2b2d42;
-            border-radius: 28px;
-            box-shadow: 8px 8px 0 #FFD166;
             color: #EF476F;
-            font-size: 30px;
+            font-size: 32px;
             font-weight: 900;
-            line-height: 1.45;
-            margin: 0;
-            padding: 22px 32px;
-            transform: rotate(-1deg);
+            line-height: 1.35;
+            margin: 10px 0 0;
         }
 
         .conclusion-spark {
-            color: #2b2d42;
-            font-size: 64px;
+            color: #EF476F;
+            font-size: 58px;
             position: absolute;
-            right: 70px;
-            top: 62px;
+            right: 64px;
+            top: 54px;
             transform: rotate(10deg);
             z-index: 0;
         }
@@ -888,9 +920,14 @@
     <div class="slide-container conclusion-slide" id="slide10">
         <div class="conclusion-layout">
             <p class="conclusion-kicker"><i class="fa-solid fa-flag-checkered"></i> 参画を考えている方へ</p>
-            <h2>一緒に、SS課の次を<br>作っていきませんか？</h2>
-            <p class="conclusion-lead">安定した主力業務を土台に、AI活用・自動化・新規事業へ挑戦しています。</p>
-            <p class="conclusion-callout">少人数だからこそ、あなたの力が<br>すぐに形になります。</p>
+            <h2>あなたの力で、<br>SS課はもっと進める。</h2>
+            <p class="conclusion-lead">安定した仕事を大切にしながら、新しい仕組みや事業づくりにも挑戦しています。</p>
+            <div class="conclusion-tags" aria-label="参画してほしい領域">
+                <span><i class="fa-solid fa-code"></i> つくる</span>
+                <span><i class="fa-solid fa-wand-magic-sparkles"></i> 試す</span>
+                <span><i class="fa-solid fa-rocket"></i> 広げる</span>
+            </div>
+            <p class="conclusion-callout">一緒に、次のSS課を作っていきませんか？</p>
         </div>
         <i class="fa-solid fa-star conclusion-spark"></i>
     </div>
