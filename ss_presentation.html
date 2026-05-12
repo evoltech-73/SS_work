@@ -341,6 +341,7 @@
         .tile:nth-child(1) { box-shadow: 8px 8px 0 #EF476F; }
         .tile:nth-child(2) { box-shadow: 8px 8px 0 #06D6A0; }
         .tile:nth-child(3) { box-shadow: 8px 8px 0 #FFD166; }
+        .tile:nth-child(4) { box-shadow: 8px 8px 0 #118AB2; }
 
         .tile:hover {
             transform: translateY(-8px) rotate(-1deg);
@@ -373,6 +374,24 @@
         .tile:nth-child(1) .icon { background: #EF476F; }
         .tile:nth-child(2) .icon { background: #06D6A0; }
         .tile:nth-child(3) .icon { background: #FFD166; color: #2b2d42; }
+        .tile:nth-child(4) .icon { background: #118AB2; }
+
+        .phase-tiles {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .phase-tiles .tile {
+            padding: 32px 22px;
+        }
+
+        .phase-tiles .tile h3 {
+            font-size: 22px;
+        }
+
+        .phase-tiles .tile p {
+            font-size: 16px;
+        }
 
         .tile h3 {
             font-size: 24px;
@@ -759,32 +778,6 @@
         <i class="fa-solid fa-lightbulb" style="position: absolute; bottom: 100px; left: 150px; font-size: 60px; color: #FFD166; text-shadow: 3px 3px 0 #2b2d42; transform: rotate(-10deg);"></i>
     </div>
 
-    <div class="slide-container" id="slide2">
-        <h2 class="slide-title">SS課の役割とフェーズ</h2>
-        <p class="subtitle" style="margin-bottom: 40px; text-align: left; width: 100%; color: #2b2d42; background: #E0F7FA; padding: 16px 24px; border-radius: 16px; border: 3px solid #2b2d42;">
-            既存業務を安定させながら、「これからのSS課をどう作っていくか」という新しいフェーズに入っています！
-        </p>
-        <div class="content-area">
-            <div class="tiled-content">
-                <div class="tile">
-                    <div class="icon"><i class="fa-solid fa-code"></i></div>
-                    <h3>システム開発・テスト自動化</h3>
-                    <p>Webアプリやオーディオ関連など、技術的なアプローチで業務の効率化や自動化を推進しています。</p>
-                </div>
-                <div class="tile">
-                    <div class="icon"><i class="fa-solid fa-headset"></i></div>
-                    <h3>IT支援・DX支援</h3>
-                    <p>社内外問わず、「困った時に頼られる」情シスのような立ち位置で幅広いITサポートを提供します。</p>
-                </div>
-                <div class="tile">
-                    <div class="icon"><i class="fa-solid fa-rocket"></i></div>
-                    <h3>新規事業立ち上げ</h3>
-                    <p>現状に満足せず、新しい価値やサービスを生み出すための事業化チャレンジを続けています。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="slide-container" id="slide3" style="padding: 40px;">
         <div class="section-title-layout">
             <h2>現在の主力業務</h2>
@@ -867,6 +860,37 @@
                     <h3><i class="fa-solid fa-brain" style="color: #EF476F;"></i> AI活用の新スタイル</h3>
                     <p style="margin-bottom: 16px;">OpenAI ProプランやCodexを導入し、コード生成、設計補助、アイデア創出に活用。</p>
                     <p>「少人数でも大きな価値を出せるチーム」を目指し、高速試作を実現する働き方に挑戦中です。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container" id="slide2">
+        <h2 class="slide-title">SS課の役割とフェーズ</h2>
+        <p class="subtitle" style="margin-bottom: 40px; text-align: left; width: 100%; color: #2b2d42; background: #E0F7FA; padding: 16px 24px; border-radius: 16px; border: 3px solid #2b2d42;">
+            既存業務を安定させながら、「これからのSS課をどう作っていくか」という新しいフェーズに入っています！
+        </p>
+        <div class="content-area">
+            <div class="tiled-content phase-tiles">
+                <div class="tile">
+                    <div class="icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>ネットワーク機器評価</h3>
+                    <p>ルーターなどの機器評価・動作確認を通じて、製品品質を支える基盤業務を担っています。</p>
+                </div>
+                <div class="tile">
+                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>システム開発・テスト自動化</h3>
+                    <p>Webアプリやオーディオ関連など、技術的なアプローチで業務の効率化や自動化を推進しています。</p>
+                </div>
+                <div class="tile">
+                    <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>IT支援・DX支援</h3>
+                    <p>社内外問わず、「困った時に頼られる」情シスのような立ち位置で幅広いITサポートを提供します。</p>
+                </div>
+                <div class="tile">
+                    <div class="icon"><i class="fa-solid fa-rocket"></i></div>
+                    <h3>新規事業立ち上げ</h3>
+                    <p>現状に満足せず、新しい価値やサービスを生み出すための事業化チャレンジを続けています。</p>
                 </div>
             </div>
         </div>
